@@ -10,8 +10,7 @@ class DashboardController extends Controller
     public function index()
     {
         $title = "Dashboard";
-        $page = "Home";
         $route = route('dashboard');
-        return view('admin.dashboard', compact('title', 'page', 'route'));
+        return view('admin.dashboard', compact('title', 'route'));
     }
 }
